@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dep-nilesh
+  namespace: nilesh
+  annotations:
+    kubernetes.io/change-cause: "second revision"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+      - name: c1
+        image: nginx:1.25.1
+      - name: c2
+        image: redis:8.6-trixie

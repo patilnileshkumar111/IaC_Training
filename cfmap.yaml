@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cm1
+  namespace: nilesh
+data:
+  MYSQL_ROOT_PASSWORD: "root@2026"
+  MYSQL_USER: "allianz"
+  MYSQL_PASSWORD: "allianz123"
+  MYSQL_DATABASE: "newdb"
