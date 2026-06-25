@@ -1,0 +1,10 @@
+resources:
+- ../../base
+namespace: nilesh
+namePrefix: prod-
+replicas:
+- name: nginx
+  count: 1
+images:
+- name: nginxdemos/hello
+  newName: caddy

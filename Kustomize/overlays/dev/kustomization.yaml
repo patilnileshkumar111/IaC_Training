@@ -1,0 +1,7 @@
+resources:
+- ../../base
+namespace: nilesh
+namePrefix: dev-
+replicas:
+- name: nginx
+  count: 1
